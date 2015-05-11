@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 
-ruby '2.1.4'
+ruby '2.1.5'
 gem 'rails', '4.1.6'
 
 gem 'sass-rails', '~> 4.0.3'
@@ -16,7 +16,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
 
-gem 'spring',        group: :development
+#gem 'spring',        group: :development
 
 group :development, :test do
   gem 'sqlite3'
