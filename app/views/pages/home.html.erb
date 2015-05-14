@@ -3,7 +3,7 @@
   
   <h2>This is the homepage for the proffesional Ruby On Rails developer course on Udemy</h2>
   
-  <%= link_to "Sign up now!" , "", class: "btn btn-large btn-success" %>
+  <%= link_to "Sign up now!" , register_path, class: "btn btn-large btn-success" %>
 </div>
 <div class="row">
   <div class="col-lg-4">
@@ -20,13 +20,13 @@
   
   <div class="col-lg-4">
     <h3 class="midrow">
-      View recipes as guest user
+      Sign in to your account
     </h3>
     <h2 class="left">
-      Browse and view recipes as a guest and Sign Up later
+      Add/update your recipes, create reviews, like/dislike recipes etc.
     </h2>
     <p>
-      <%= link_to "Browse Recipe Listings", "", class: "btn btn-warning btn-small" %>
+      <%= link_to "Log in to your account", login_path, class: "btn btn-warning btn-small" %>
     </p>
   </div>
   
