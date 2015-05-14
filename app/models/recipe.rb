@@ -1,6 +1,10 @@
 class Recipe < ActiveRecord::Base
     belongs_to :chef
     has_many :likes
+    has_many :recipe_styles
+    has_many :styles, through: :recipe_styles
+    has_many :recipe_ingrediants
+    has_many :ingrediants, through: :recipe_ingrediants
     
     validates :chef_id, presence: true
     validates :name, presence: true, length: {minumum: 5, maximum: 100}
